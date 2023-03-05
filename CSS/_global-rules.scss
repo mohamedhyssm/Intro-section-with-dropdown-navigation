@@ -1,0 +1,61 @@
+$White: hsl(0, 0%, 98%);
+$Gray: hsl(0, 0%, 41%);
+$Black: hsl(0, 0%, 8%);
+$mainTrans: 0.3s;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $Gray;
+  font-weight: 500;
+  font-size: 14px;
+  transition: $mainTrans;
+}
+
+ul {
+  list-style: none;
+}
+
+
+body {
+  font-family: 'Epilogue', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  color: $Gray;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
